@@ -12,22 +12,19 @@ int main(void)
         char letter;
 	char Let;
 
-	letter ='a';
-	Let ='A';
-
-	while(letter<='z')
+	letter = 'a';
+	Let = 'A';
+	while (letter <= 'z')
 	{
 	putchar(letter);
 	letter++;
 	}
-
-	while(Let<='Z')
+	while (Let <= 'Z')
 	{
 	putchar(Let);
 	Let++;
 	}
 	putchar('\n');
-
-
         return (0);
 }
+	
