@@ -9,21 +9,18 @@
  */
 int main(void)
 {
-        char n;
+	char n;
 	char letter='a';
-	n='0';
-	do
-	{
-	putchar(n);
-	n++;
-	}while(n<='9');
 
-	do
-	{
-	putchar(letter);
-	letter++;
-	}while(letter<='f');
+	n = '0';
+	do {
+		putchar(n);
+		n++;
+	} while (n <= '9');
+	do {
+		putchar(letter);
+		letter++;
+	} while (letter <= 'f');
 	putchar('\n');
-
-        return (0);
+	return (0);
 }
