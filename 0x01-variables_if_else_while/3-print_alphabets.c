@@ -9,22 +9,22 @@
  */
 int main(void)
 {
-        char letter;
+	char letter;
 	char Let;
 
 	letter = 'a';
 	Let = 'A';
 	while (letter <= 'z')
 	{
-	putchar(letter);
-	letter++;
+		putchar(letter);
+		letter++;
 	}
 	while (Let <= 'Z')
 	{
-	putchar(Let);
-	Let++;
+		putchar(Let);
+		Let++;
 	}
 	putchar('\n');
-        return (0);
+	return (0);
 }
 	
