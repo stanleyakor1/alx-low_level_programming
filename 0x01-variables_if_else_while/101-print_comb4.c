@@ -7,14 +7,15 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void) {
+int main(void) 
+{
 	int x, y, z;
 	
 	for (x = 0; x < 10; x++)
 	{
 		for (y = x + 1; y < 10; y++)
 		{
-			for(z = y + 1; z < 10; z++)
+			for (z = y + 1; z < 10; z++)
 			{
 				putchar('0' + x);
 				putchar('0' + y);
