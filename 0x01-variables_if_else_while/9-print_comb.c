@@ -1,5 +1,6 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
 /* betty style doc for function main goes there */
 /**
@@ -9,16 +10,17 @@
  */
 int main(void)
 {
-	int n = 0;
+	int i;
 
-	do {
-		putchar('0' + n);
-		n++;
-	if (n <= 9)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(',');
+		putchar('0' + i);
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	putchar(' ');
-	} while (n <= 9);
+	putchar('\n');
 	return (0);
 }
