@@ -10,7 +10,7 @@
 int main(void)
 {
 	char n;
-	char letter='a';
+	char letter = 'a';
 
 	n = '0';
 	do {
