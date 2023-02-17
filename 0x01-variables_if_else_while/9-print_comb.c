@@ -20,6 +20,5 @@ int main(void)
 	}
 	putchar(' ');
 	} while (n <= 9);
-	putchar('\n');
 	return (0);
 }
