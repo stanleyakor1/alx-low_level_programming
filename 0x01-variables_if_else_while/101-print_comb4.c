@@ -7,10 +7,10 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void) 
+int main(void)
 {
-	int x, y, z;
-	
+	int x,y,z;
+
 	for (x = 0; x < 10; x++)
 	{
 		for (y = x + 1; y < 10; y++)
