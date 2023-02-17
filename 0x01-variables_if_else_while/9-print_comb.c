@@ -18,6 +18,7 @@ int main(void)
 	{
 		putchar(',');
 	}
+	putchar(' ');
 	} while (n <= 9);
 	putchar('\n');
 	return (0);
