@@ -9,14 +9,14 @@
  */
 int main(void)
 {
-        int n;
-	n=0;
+	int n;
+
+	n = 0;
 	do
 	{
-	printf("%d",n);
-	n++;
-	}while(n!=10);
+		printf("%d", n);
+		n++;
+	}while (n != 10);
 	printf("\n");
-
-        return (0);
+	return (0);
 }
