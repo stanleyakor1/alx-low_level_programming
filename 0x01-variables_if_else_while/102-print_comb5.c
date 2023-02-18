@@ -1,28 +1,35 @@
 #include <stdio.h>
-/* more headers goes there */
+#include <stdlib.h>
+#include <time.h>
 
-/* betty style doc for function main goes there */
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
-  int x, y;
-  for (x = 0; x < 10; x++) 
-  {
-    for (y = 0; y < 10; y++)
-    {
-      putchar('0' + x);
-      putchar('0' + y);
-      if(x*y<72)
-      {
-    	  putchar(',');
-     	  putchar(' ');
+	int i, j;
+
+	for (i = 0; i < 100; i++)
+	{
+		for (j = i; j < 100; j++)
+		{
+			if (i != j)
+			{
+				putchar('0' + i / 10);
+				putchar('0' + i % 10);
+				putchar(' ');
+				putchar('0' + j / 10);
+				putchar('0' + j % 10);
+				if (i != 98 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 	}
-    }
-  }
-  putchar('\n');
-  return (0);
+	putchar('\n');
+	return 0;
 }
