@@ -1,14 +1,15 @@
 #include "main.h"
 /**
- * main - check the code
+ * times_table - check the code
  *
  * Return: Always 0.
  */
 void times_table(void)
 {
-	int x,y,z;
+	int x, y, z;
+
 	for (x = 0; x < 10; x++)
-	{	
+	{
 		_putchar('0' + 0);
 		for (y = 1; y < 10; y++)
 		{
