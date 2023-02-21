@@ -3,8 +3,8 @@
 
 /* betty style doc for function main goes there */
 /**
- * _abs - Entry point
- * int n - input
+ * _abs - Computes the absolute value of a number
+ * @n: input number as an integer.
  * Return: Always 0 (Success)
  */
 int _abs(int n)
