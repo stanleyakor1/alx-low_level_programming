@@ -3,7 +3,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - Entry point
+ * jack_bauer - Entry point
  *
  * Return: Always 0 (Success)
  */
