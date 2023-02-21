@@ -11,7 +11,6 @@ int main (void)
 {
 	long int x = 1, y = 2, init;
 	int i = 0;
-	char s = ',';
 
 	printf("%li", x);
 	printf(", "); 
