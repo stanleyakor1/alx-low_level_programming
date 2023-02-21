@@ -3,8 +3,8 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - Entry point
- *
+ * _isalpha - Entry point
+ *@c: input number as an integer.
  * Return: Always 0 (Success)
  */
 int _isalpha(int c)
