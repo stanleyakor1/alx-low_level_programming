@@ -23,14 +23,14 @@ void jack_bauer(void)
 				_putchar(':');
 			}
 			else
-			{	
+			{
 				_putchar('0' + (int) min / 10);
 				_putchar('0' + min % 10);
 				_putchar(':');
 			}
 
 
-			if (sec < 10 )
+			if (sec < 10)
 			{
 				_putchar('0' + 0);
 				_putchar('0' + sec);
@@ -42,7 +42,7 @@ void jack_bauer(void)
 			}
 			_putchar('\n');
 			sec++;
-		} while ( sec <= 59);
+		} while (sec <= 59);
 		if (min != 23)
 			sec = 0;
 		min++;
