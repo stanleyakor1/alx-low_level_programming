@@ -3,8 +3,8 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - Entry point
- *
+ * print_sign - prints the sign of a number
+ * @n - The input
  * Return: Always 0 (Success)
  */
 int print_sign(int n)
