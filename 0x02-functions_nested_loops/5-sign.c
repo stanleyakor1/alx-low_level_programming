@@ -4,7 +4,7 @@
 /* betty style doc for function main goes there */
 /**
  * print_sign - prints the sign of a number
- * @n - The input
+ * @n: input number as an integer.
  * Return: Always 0 (Success)
  */
 int print_sign(int n)
