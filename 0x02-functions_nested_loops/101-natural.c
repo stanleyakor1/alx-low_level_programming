@@ -9,22 +9,13 @@
  */
 int main (void)
 {
-	int s = 8, j = 1, i = 1, x = 3, y = 5;
-	
-	while ( x < 1024)
-	{
-		x = x * i;
-		s  = s + x;
-		i++;
-	}
+	int s = 0, i, j;
 
-	while (y < 1024)
+	for (i = 1; i < 1024; i++)
 	{
-		y  = y * i;
-		s  = s + y;
-		j++;
+		if ((i % 3) == 0 || (i % 5) == 0)
+			s = s + i;
 	}
-	
 	printf("%d \n", s);
 	return (0);
 }
