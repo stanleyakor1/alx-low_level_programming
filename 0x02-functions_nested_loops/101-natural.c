@@ -18,7 +18,7 @@ int main (void)
 		i++;
 	}
 
-	while (y <1024)
+	while (y < 1024)
 	{
 		y  = y * i;
 		s  = s + y;
@@ -26,4 +26,5 @@ int main (void)
 	}
 	
 	printf("%d \n",s);
+	return (0);
 }
