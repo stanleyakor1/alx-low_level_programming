@@ -13,7 +13,7 @@ int main(void)
 	int i = 0;
 	
 	printf("%li", x);
-	printf(", "); 
+	printf(", ");
 	printf("%li", y);
 	printf(", ");
 	while (i < 48)
