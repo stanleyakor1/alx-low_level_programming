@@ -9,12 +9,12 @@
  */
 int main (void)
 {
-	int s = 0, j = 1, i = 1, x = 3, y = 9;
+	int s = 8, j = 1, i = 1, x = 3, y = 5;
 	
 	while ( x < 1024)
 	{
 		x = x * i;
-		s = s + x;
+		s  = s + x;
 		i++;
 	}
 
@@ -25,6 +25,6 @@ int main (void)
 		j++;
 	}
 	
-	printf("%d \n",s);
+	printf("%d \n", s);
 	return (0);
 }
