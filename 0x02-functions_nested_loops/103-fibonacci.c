@@ -7,12 +7,12 @@
  *
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	long int x = 1, y = 2, init = 0, S = 2;
 	int i = 0;
 
-	while (init <= 4e6 )
+	while (init <= 4e6)
 	{
 		init = x + y;
 		if (init % 2 == 0)
@@ -23,7 +23,7 @@ int main (void)
 		y = init;
 		i++;
 	}
-	printf("%li",S);
+	printf("%li", S);
 	printf("\n");
 	return (0);
 }
