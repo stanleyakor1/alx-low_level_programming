@@ -25,4 +25,5 @@ int main (void)
 	}
 	printf("%li",S);
 	printf("\n");
+	return (0);
 }
