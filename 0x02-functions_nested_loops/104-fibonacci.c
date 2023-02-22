@@ -9,25 +9,25 @@
  */
 int main (void)
 {
-	long int x = 1, y = 2, init;
+	long unsigned int x = 1, y = 2, init;
 	int i = 0;
 	char s = ',';
 
-	printf("%li", x);
+	printf("%lu", x);
 	printf(", "); 
-	printf("%li", y);
+	printf("%lu", y);
 	printf(", ");
 	while (i < 98 )
 	{
 		init = x + y;
 		if (i < 97)
 		{
-			printf("%li", init); 
+			printf("%lu", init); 
 			printf(", ");
 		}
 		else
 		{
-			printf("%li", init);
+			printf("%lu", init);
 		}
 		
 		x = y;
