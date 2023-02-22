@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	int s = 0, i;
 
@@ -16,6 +16,6 @@ int main (void)
 		if ((i % 3) == 0 || (i % 5) == 0)
 			s = s + i;
 	}
-	printf("%d \n", s);
+	printf("%d\n", s);
 	return (0);
 }
