@@ -9,7 +9,7 @@
  */
 int main (void)
 {
-	int s = 0, i, j;
+	int s = 0, i;
 
 	for (i = 1; i < 1024; i++)
 	{
