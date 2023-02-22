@@ -16,10 +16,10 @@ int main (void)
 	printf(", "); 
 	printf("%lu", y);
 	printf(", ");
-	while (i < 98 )
+	while (i < 99 )
 	{
 		init = x + y;
-		if (i < 97)
+		if (i < 98)
 		{
 			printf("%lu", init); 
 			printf(", ");
