@@ -9,24 +9,24 @@
  */
 int main (void)
 {
-	long long int x = 1, y = 2, init;
+	long int x = 1, y = 2, init;
 	int i = 0;
 
-	printf("%lli", x);
+	printf("%li", x);
 	printf(", "); 
-	printf("%lli", y);
+	printf("%li", y);
 	printf(", ");
 	while (i < 48 )
 	{
 		init = x + y;
 		if (i < 47)
 		{
-			printf("%lli", init); 
+			printf("%li", init); 
 			printf(", ");
 		}
 		else
 		{
-			printf("%lli", init);
+			printf("%li", init);
 		}
 		
 		x = y;
