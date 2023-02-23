@@ -20,7 +20,7 @@ void more_numbers(void)
 			}
 			_putchar('0' + num % 10);
 			num++;
-		} while ( num <= 14);
+		} while (num <= 14);
 		_putchar('\n');
 		i++;
 	}
