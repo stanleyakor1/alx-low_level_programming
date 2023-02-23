@@ -25,5 +25,5 @@ void more_numbers(void)
 		_putchar('\n');
 		alpha = 0;
 		n++;
-	} while (n <= 10);
+	} while (n <= 9);
 }
