@@ -1,29 +1,28 @@
 #include "main.h"
+/* betty style doc for function main goes there */
 /**
- * print_alphabet_x10 - Prints _putchar as a message.
- * Description: It prints the characters _putchar.
+ * more_numbers - prints numbers 10 times
+ *
  * Return: Always 0 (Success)
  */
 void more_numbers(void)
 {
-	int alpha = 0;
-	int n = 0;
+	int i = 0;
+	int num;
 
-	do {
+	while (i < 10)
+	{
+		num = 0;
+
 		do {
-			if (alpha < 10)
+			if (num >= 10)
 			{
-				_putchar('0' + alpha);
+				_putchar('0' + num / 10);
 			}
-			else
-			{
-				_putchar('0' + alpha / 10);
-				_putchar('0' + alpha % 10);
-			}
-			alpha++;
-		} while (alpha <= 14);
+			_putchar('0' + num % 10);
+			num++;
+		} while ( num <= 14);
 		_putchar('\n');
-		alpha = 0;
-		n++;
-	} while (n <= 9);
+		i++;
+	}
 }
