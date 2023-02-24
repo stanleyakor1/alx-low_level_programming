@@ -2,14 +2,14 @@
 
 /**
  * print_diagonal - prints a diagonal line n times
- * @n: integer
+ * @n: int
  *
  * Return: Always 0 (Success)
  */
 void print_diagonal(int n)
 {
 	int i = 0;
-	int j;
+	int j = 0;
 
 	if (n <= 0)
 	{
@@ -18,15 +18,17 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		do {
-			j = 0;
-			do {
+		while (i < n)
+		{
+			while (j < i)	
+		       	{
 				_putchar(' ');
 				j++;
-			} while (j < i); 
+			} 
+			j = 0;
 			_putchar(92);
 			_putchar('\n');
 			i++;
-		} while (i < n);
+		}
 	}
 }
