@@ -20,7 +20,7 @@ void puts_half(char *s)
 			putchar(s[i]);
 		}
 	}
-	else 
+	else
 	{
 		for (i = (n - 1) / 2 + 1; i < n; i++)
 		{
