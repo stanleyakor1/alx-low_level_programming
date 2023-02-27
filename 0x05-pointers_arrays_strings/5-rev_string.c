@@ -3,7 +3,7 @@
 #include <string.h>
 /* betty style doc for function main goes there */
 /**
- * _rev_string - reverses a string
+ * rev_string - reverses a string
  * @s: string
  *
  * Return: Always 0 (Success)
