@@ -2,21 +2,21 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LEN 8
-#define ASCII_RANGE 94
+#define PASSWORD_LENGTH 6
 #define ASCII_START 33
+#define ASCII_END 126
 
 int main(void)
 {
-	char password[PASSWORD_LEN + 1];
-	int i;
-    
-	srand(time(NULL)); // Initialize random number generator//
-	for (i = 0; i < PASSWORD_LEN; i++)
+	srand(time(NULL));
+
+	char password[PASSWORD_LENGTH+1];
+	
+	for (int i = 0; i < PASSWORD_LENGTH; i++)
 	{
-		password[i] = rand() % ASCII_RANGE + ASCII_START;
+		password[i] = rand() % (ASCII_END - ASCII_START + 1) + ASCII_START;
 	}
-	password[PASSWORD_LEN] = '\0'; // Null-terminate the string
-	printf("Random Password: %s\n", password);
-	return 0;
+	password[PASSWORD_LENGTH] = '\0';
+	printf("%s\n", password);
+	return (0);
 }
