@@ -7,12 +7,12 @@
 #define ASCII_END 126
 
 int main(void)
-{
-	srand(time(NULL));
-
+{	
 	char password[PASSWORD_LENGTH+1];
-	
-	for (int i = 0; i < PASSWORD_LENGTH; i++)
+	int i;
+
+	srand(time(NULL));
+	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
 		password[i] = rand() % (ASCII_END - ASCII_START + 1) + ASCII_START;
 	}
