@@ -1,22 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-#define PASSWORD_LENGTH 6
-#define ASCII_START 33
-#define ASCII_END 126
-
+ /* main - entry point
+ *
+ * Return: generated password
+ */
 int main(void)
-{	
-	char password[PASSWORD_LENGTH+1];
-	int i;
+{
+	char cha;
+	int x;
 
-	srand(time(NULL));
-	for (i = 0; i < PASSWORD_LENGTH; i++)
-	{
-		password[i] = rand() % (ASCII_END - ASCII_START + 1) + ASCII_START;
-	}
-	password[PASSWORD_LENGTH] = '\0';
-	printf("%s\n", password);
+	srand(time(0));
+	do{
+		cha = rand() % 128;
+		x += cha;
+		putchar(cha);
+	} while (x <= 2645);
+	putchar(2772 - x);
 	return (0);
 }
