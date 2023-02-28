@@ -11,11 +11,11 @@ int main(void)
 	int x;
 
 	srand(time(0));
-	do{
+	while (x <= 2645)
 		cha = rand() % 128;
 		x += cha;
 		putchar(cha);
-	} while (x <= 2645);
+	}
 	putchar(2772 - x);
 	return (0);
 }
