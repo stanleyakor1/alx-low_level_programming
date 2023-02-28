@@ -8,10 +8,11 @@
 int main(void)
 {
 	char cha;
-	int x;
+	int x = 0;
 
 	srand(time(0));
 	while (x <= 2645)
+	{	
 		cha = rand() % 128;
 		x += cha;
 		putchar(cha);
