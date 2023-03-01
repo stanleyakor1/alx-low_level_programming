@@ -3,22 +3,22 @@
 #include <string.h>
 /* betty style doc for function main goes there */
 /**
- * _strcat- returns length of the string
+ * _strncat- returns length of the string
  * @dest: string
  * @src: string
+ * @n: byte length
  * Return: Always 0 (Success)
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-	int n;
-
-	n = strlen(dest);
-	while (*src)
+	while (*dest)
 	{
-		dest[n] = *src;
-		src++;
-		n++;
+		dest++;
 	}
-	dest[n++] = '\0';
+	while (*src && n--)
+	{
+		*dest++ = *src++;
+	}
+	*dest = '\0';
 	return (dest);
 }

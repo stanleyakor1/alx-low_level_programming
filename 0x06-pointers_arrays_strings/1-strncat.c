@@ -6,19 +6,20 @@
  * _strcat- returns length of the string
  * @dest: string
  * @src: string
+ * @n : length of char to be concatenated
  * Return: Always 0 (Success)
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
-	int n;
+	int i = strlen(dest);
 
-	n = strlen(dest);
-	while (*src)
+	while (*src && n > 0)
 	{
-		dest[n] = *src;
+		dest[i] = *src;
 		src++;
-		n++;
+		i++;
+		n--;
 	}
-	dest[n++] = '\0';
+	dest[i++] = '\0';
 	return (dest);
 }
