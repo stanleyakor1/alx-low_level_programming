@@ -3,7 +3,7 @@
 #include <string.h>
 /* betty style doc for function main goes there */
 /**
- * _strcat- returns length of the string
+ * _strncat- returns length of the string
  * @dest: string
  * @src: string
  * @n : length of char to be concatenated
