@@ -16,14 +16,15 @@ char *leet(char *ptr)
 
 	while (*a)
 	{
-		for (i = 0; i < 12; i++)
-		{
+		i = 0;
+		do {
 			if (*a == leet_chars[i])
 			{
 				*a = leet_nums[i];
 				break;
 			}
-		}
+			i++;
+		} while (i < 12);
 		a++;
 	}
 	return (ptr);
