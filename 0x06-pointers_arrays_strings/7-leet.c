@@ -10,8 +10,8 @@
 char *leet(char *ptr)
 {	
 	char *a = ptr;
-	char leet_chars[] = "AaEeGgOoTtLl";
-	char leet_nums[] = "443366007711";
+	char leet_chars[] = "aAeEoOtTlL";
+	char leet_nums[] = "4433007711";
 	int i;
 
 	while (*a)
