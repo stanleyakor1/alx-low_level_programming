@@ -9,11 +9,14 @@
  */
 char *string_toupper(char *a)
 {
-	while (*a)
+	char *ptr = a;
+
+	while (*ptr)
 	{
-		if (*a >= 'a' && *a <= 'z')
-			*a = *a - 'a' + 'A';
-		a++;
+		if (*ptr >= 'a' && *ptr <= 'z')
+			*ptr = *ptr - 'a' + 'A';
+		ptr++;
 	}
 	return (a);
 }
+
