@@ -10,10 +10,10 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	unsigned int count = 0;
+	int count = 0;
 	int i = 0;
-	unsigned int l1 = strlen(s1);
-	unsigned int l2 = strlen(s2);
+	int l1 = strlen(s1);
+	int l2 = strlen(s2);
 
 	while (*s1 && *s2)
 	{
