@@ -10,6 +10,16 @@
  */
 int _strcmp(char *s1, char *s2)
 {
+	while (*s1 && *s2 && (*s1 == *s2))
+	{
+		s1++;
+		s2++;
+	}
+	return (*s1 - *s2);
+}
+/*
+int _strcmp(char *s1, char *s2)
+{
 	int count = 0;
 	int i = 0;
 	int l1 = strlen(s1);
@@ -29,4 +39,4 @@ int _strcmp(char *s1, char *s2)
 		return (15);
 	else
 		return (-15);
-}
+}*/
