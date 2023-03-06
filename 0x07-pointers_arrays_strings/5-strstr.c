@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /* betty style doc for function main goes there */
 /**
  * _strstr-  searh a string for any set of bytes
@@ -24,5 +23,5 @@ char *_strstr(char *haystack, char *needle)
 		p = haystack;
 		needle++;
 	}
-	return (NULL);
+	return ('\0');
 }
