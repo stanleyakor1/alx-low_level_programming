@@ -5,7 +5,7 @@
  * print_diagsums-  prints the sum of the diagonals of a 2d array
  * @a:array
  * size: size of the array
- *Return: void.
+ *Return: prints the sum of diagonal.
 */
 void print_diagsums(int *a, int size)
 {
@@ -16,7 +16,7 @@ void print_diagsums(int *a, int size)
 	{
 		for (j = 0; j < size; j++)
 		{
-			if(j ==i)
+			if(j == i)
 			{
 				n1 += *(a + i * size + j);
 			}
