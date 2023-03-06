@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /* betty style doc for function main goes there */
 /**
  * _strchr-  function that locates a character in a string.
@@ -23,6 +22,6 @@ char *_strchr(char *s, char c)
 	}
 	else
 	{
-		return (NULL);
+		return ('\0');
 	}
 }
