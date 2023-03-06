@@ -1,7 +1,7 @@
 #include "main.h"
 /* betty style doc for function main goes there */
 /**
- * _print_chessboard-  prints elements of a 2d array
+ * print_chessboard-  prints elements of a 2d array
  * @a:array
  *Return: void.
 */
