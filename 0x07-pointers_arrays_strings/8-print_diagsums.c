@@ -3,7 +3,7 @@
 /* betty style doc for function main goes there */
 /**
  * print_diagsums- prints the sum of the diagonals of a 2d array
- * @a:array
+ * @a: array
  * size: size of the array
  *Return: prints the sum of diagonal.
 */
