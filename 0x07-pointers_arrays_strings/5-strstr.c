@@ -5,17 +5,16 @@
  * _strstr-  searh a string for any set of bytes
  * @haystack:string1
  * @needle : string2
- *Return: a pointer to the beginning of the located substring, or NULL if not found.
+ *Return: a pointer to the beginning of the located substring, or NULL.
 */
 char *_strstr(char *haystack, char *needle)
 {
 	char *p = haystack;
 
-	while (*needle)
+	while (*needle != '\0')
 	{
-		
-		while (*p)
-		{	
+		while (*p != '\0')
+		{
 			if (*needle == *p)
 			{
 				return (p);
