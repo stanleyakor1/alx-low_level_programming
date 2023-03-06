@@ -16,7 +16,7 @@ void print_diagsums(int *a, int size)
 	{
 		for (j = 0; j < size; j++)
 		{
-			if(j == i)
+			if (j == i)
 			{
 				n1 = n1 + *(a + i * size + j);
 			}
