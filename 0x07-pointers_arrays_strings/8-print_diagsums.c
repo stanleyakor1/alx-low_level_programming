@@ -9,7 +9,7 @@
 */
 void print_diagsums(int *a, int size)
 {
-	unsigned int n = 0;
+	int n1 = 0, n2 = 0;
 	int i, j;
 
 	for (i = 0; i < size; i++)
@@ -18,9 +18,13 @@ void print_diagsums(int *a, int size)
 		{
 			if(j ==i)
 			{
-				n += *(a + i*size +j);
+				n1 += *(a + i * size + j);
+			}
+			if (i == size - j - 1)
+			{
+				n2 += *(a + i * size + j);
 			}
 		}
 	}
-	printf("%u",n);
+	printf("%d, %d\n", n1, n2);
 }
