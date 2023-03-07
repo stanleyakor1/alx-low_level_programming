@@ -20,6 +20,10 @@ char *_strstr(char *haystack, char *needle)
 			}
 			p++;
 		}
+		if (!*p)
+		{
+			return (haystack);
+		}
 		p = haystack;
 		needle++;
 	}
