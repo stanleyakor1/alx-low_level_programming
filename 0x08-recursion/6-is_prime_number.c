@@ -1,7 +1,6 @@
 #include "main.h"
 /* betty style doc for function main goes there */
 /**
- * is_prime_number-  checks if number is prime.
  * more- function to help is_prime
  * @n: number
  * @i: integer
@@ -15,6 +14,12 @@ int more(int n, int i)
 		return (0);
 	return (more(n, i - 1));
 }
+/* betty style doc for function main goes there */
+/**
+ * is_prime_number-  checks if number is prime.
+ * @n: number
+ * Return: prints if prime, 0 otherwise.
+ */
 int is_prime_number(int n)
 {
 	if (n <= 1)
