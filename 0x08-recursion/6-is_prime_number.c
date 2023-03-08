@@ -3,6 +3,8 @@
 /**
  * is_prime_number-  checks if number is prime.
  * @n: number
+ * more: helper function
+ * @i: integer
  * Return: prints if prime, 0 otherwise.
  */
 int more(int n, int i)
