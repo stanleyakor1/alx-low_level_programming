@@ -2,7 +2,7 @@
 /* betty style doc for function main goes there */
 /**
  * is_prime_number-  checks if number is prime.
- * more- helper function
+ * more- function to help is_prime
  * @n: number
  * @i: integer
  * Return: prints if prime, 0 otherwise.
