@@ -1,9 +1,9 @@
 #include "main.h"
 /* betty style doc for function main goes there */
 /**
- * _strlen_recursion-  prints a string in reverse order.
+ * _strlen_recursion-  computes the length of a string.
  * @s: string pointer
- * Return: prints a string using recursion.
+ * Return: The length of a string.
  */
 int _strlen_recursion(char *s)
 {
