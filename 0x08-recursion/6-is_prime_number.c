@@ -2,8 +2,8 @@
 /* betty style doc for function main goes there */
 /**
  * is_prime_number-  checks if number is prime.
+ * more- helper function
  * @n: number
- * more: helper function
  * @i: integer
  * Return: prints if prime, 0 otherwise.
  */
