@@ -7,7 +7,7 @@
  * @argv: array of input arguments
  * Return: number of input
  */
-int main(int argc, char ** argv __attribute__((unused)))
+int main(int argc, char *argv[] __attribute__((unused)))
 {
 	argc--;
 	printf("%d\n", argc);
