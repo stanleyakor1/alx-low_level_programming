@@ -2,13 +2,18 @@
 #include <stdlib.h>
 /* betty style doc for function main goes there */
 /**
- * main-prints the input args.
+ * main-prints the number of input arguments.
  * @argc: number of input arguments
  * @argv: array of input arguments
- * Return: prints all the input arguments
+ * Return: number of input
  */
-int main(int argc __attribute__((unused)), char** argv)
+int main(int argc, char ** argv)
 {
-	printf("%s\n", argv[0]);
+	int i = 0;
+
+	do {
+		printf("%s\n", argv[i]);
+		i++;
+	} while (i < argc);
 	return (0);
 }
