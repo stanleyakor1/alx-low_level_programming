@@ -46,6 +46,6 @@ int main(int argc, char *argv[])
 			num_coin++;
 		}
 	}
-	printf("%d\n", num_coin); 
+	printf("%d\n", num_coin);
 	return (0);
 }
