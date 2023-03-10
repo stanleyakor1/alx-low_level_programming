@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 /* betty style doc for function main goes there */
 /**
  * main- computes the number of coin to recieve as change
@@ -19,11 +18,6 @@ int main(int argc, char *argv[])
 		return (1);
         }
 	change = atoi(argv[1]);
-	if (change < 0)
-	{
-		printf("%d\n", 0);
-		return (0);
-	}
 	while (change > 0)
 	{
 		if (change >= 25)
