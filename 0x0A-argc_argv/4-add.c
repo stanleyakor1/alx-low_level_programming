@@ -1,31 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-/* betty style doc for function main goes there */
+
 /**
- * main- sum input integers
- * @argc: number of input arguments
- * @argv: array of input arguments
- * Return: result of sum
- */
+ *main - adds positive numbers.
+ *@argc: number of command line arguments.
+ *@argv: array that contains the program command line arguments.
+*Return: 0 - Success.
+*/
+
 int main(int argc, char *argv[])
 {
-	int s = 0, i;
+	int i, j, add = 0;
 
-	if (argc < 2)
-		printf("%d\n", 0);
-	else
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (!atoi(argv[i]))
+			if (!isdigit(argv[i][j]))
 			{
-				printf("%s\n", "Error");
+				printf("Error\n");
 				return (1);
 			}
-			s += atoi(argv[i]);
 		}
-		printf("%d\n", s);
+		add += atoi(argv[i]);
 	}
+	printf("%d\n", add);
 	return (0);
 }
