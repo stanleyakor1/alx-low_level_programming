@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /* betty style doc for function main goes there */
 /**
  * main- sum input integers
@@ -17,7 +18,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (!atoi(argv[i]))
+			if (!isdigit(argv[i]))
 			{
 				printf("%s\n", "Error");
 				return (1);
