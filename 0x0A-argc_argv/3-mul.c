@@ -7,7 +7,7 @@
  * @argv: array of input arguments
  * Return: result of multiplication
  */
-int main(int argc, char ** argv)
+int main(int argc, char *argv[])
 {
 	if (argc < 3 || argc > 3)
 	{
