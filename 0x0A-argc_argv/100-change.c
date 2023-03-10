@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 /* betty style doc for function main goes there */
 /**
- * main- sum input integers
+ * main- computes the number of coin to recieve as change
  * @argc: number of input arguments
  * @argv: array of input arguments
- * Return: result of sum
+ * Return: number of coin
  */
 int main(int argc, char *argv[])
 {
@@ -13,9 +12,9 @@ int main(int argc, char *argv[])
 	int  change;
 
 	if (argc < 2 || argc > 2)
-        {
-                printf("%s\n", "Error");
-                return (1);
+	{
+		printf("%s\n", "Error");
+		return (1);
         }
 	change = atoi(argv[1]);
 	if (change < 0)
@@ -31,25 +30,25 @@ int main(int argc, char *argv[])
 			num_coin++;
 		}
 		else if (change >= 10)
-                {
-                        change -= 10;
-                        num_coin++;
-                }
+		{
+			change -= 10;
+			num_coin++;
+		}
 		else if (change >= 5)
-                {
-                        change -= 5;
-                        num_coin++;
-                }
+		{
+			change -= 5;
+			num_coin++;
+		}
 		else if (change >= 2)
-                {
-                        change -= 2;
-                        num_coin++;
-                }
+		{
+			change -= 2;
+			num_coin++;
+		}
 		else if (change >= 1)
-                {
-                        change -= 1;
-                        num_coin++;
-                }
+		{
+			change -= 1;
+			num_coin++;
+		}
 	}
 	printf("%d\n", num_coin); 
 	return (0);
