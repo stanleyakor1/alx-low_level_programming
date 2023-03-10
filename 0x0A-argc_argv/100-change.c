@@ -7,7 +7,7 @@
  * @argv: array of input arguments
  * Return: result of sum
  */
-int main(int argc, char ** argv)
+int main(int argc, char *argv[])
 {
 	int num_coin = 0;
 	int  change;
