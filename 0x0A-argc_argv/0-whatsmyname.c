@@ -7,14 +7,8 @@
  * @argv: array of input arguments
  * Return: prints all the input arguments
  */
-int main(int argc, char** argv)
+int main(int argc __attribute__((unused)), char** argv)
 {
-	int i = 0;
-
-	do 
-	{
-		printf("%s\n",argv[i]);
-		i++;
-	} while (i < argc);
+	printf("%s\n",argv[0]);
 	return (0);
 }
