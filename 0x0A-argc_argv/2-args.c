@@ -7,7 +7,7 @@
  * @argv: array of input arguments
  * Return: number of input
  */
-int main(int argc, char ** argv)
+int main(int argc, char *argv[])
 {
 	int i = 0;
 
