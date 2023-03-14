@@ -17,16 +17,14 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-
-	if (vec == NULL)
+	if (!vec)
 	{
 		return (NULL);
 	}
-	
 	while (i < size)
 	{
-			vec[i] = c;
-			i++;
+		vec[i] = c;
+		i++;
 	}
 	return (vec);
 }
