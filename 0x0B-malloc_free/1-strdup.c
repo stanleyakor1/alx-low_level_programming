@@ -12,18 +12,23 @@ char *_strdup(char *str)
 	size_t i = 0;
 	size_t str_len;
 	char *str_copy;
-	
-	str_len = strlen(str);
-	str_copy = (char *) malloc(str_len + 1);
-	if (!str || !str_copy)
+
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-	while (*str)
+
+	str_len = strlen(str);
+	str_copy = (char *) malloc(str_len + 1);
+	if (str_copy == NULL)
 	{
-		str_copy[i] = *str;
-		str++;
+		return (NULL);
+	}
+	while (i <= str_len)
+	{
+		str_copy[i] = str[i];
 		i++;
 	}
 	return (str_copy);
+		
 }
