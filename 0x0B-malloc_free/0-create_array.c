@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * create_array- creates an array and intializes it with special characters.
  * @size: the array size
