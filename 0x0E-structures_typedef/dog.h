@@ -2,10 +2,10 @@
 #define _DOG_H_
 
 /**
-dog - struct function for a dog
-@ name- dog's name
-@ age - dog's age
-@ owner- dog's owner
+struct dog - struct function for a dog
+@ name: dog's name
+@ age: dog's age
+@ owner: dog's owner
 */
 struct dog
 {
