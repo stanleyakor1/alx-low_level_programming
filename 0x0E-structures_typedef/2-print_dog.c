@@ -3,7 +3,7 @@
 /**
  *print_dog - prints the struct dog
  *@d: pointer to struct
- *
+ *Return: returns void.
  */
 
 void print_dog(struct dog *d)
@@ -19,7 +19,7 @@ void print_dog(struct dog *d)
 		else
 			printf("Age: (nil)\n");
 		if (d->owner)
-			printf("Owner: %s\n", d -> owner);
+			printf("Owner: %s\n", d->owner);
 		else
 			printf("Owner: (nil)\n");
 	}
