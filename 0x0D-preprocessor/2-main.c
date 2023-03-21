@@ -3,9 +3,7 @@
 /* betty style doc for function main goes there */
 /**
  * main- function main
- * @argc: number of input arguments
- * @argv: array of input arguments
- * Return: void
+ * Return: 0 always
  */
 int main(void)
 {
