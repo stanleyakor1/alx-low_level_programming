@@ -1,5 +1,4 @@
 #include "function_pointers.h"
-#include <unistd.h>
 /**
  * print_name - writes the character c to stdout
  * @name: The character to print
