@@ -2,6 +2,7 @@
 /**
  * print_numbers-  prints all the enteries in of the function.
  * @n: number of elements to be added
+ * @separator: character between numbers
  * Return: Returns nothing.
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -10,13 +11,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list ap;
 
 	va_start(ap, n);
+
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(ap, int));
 		if (separator && i < n - 1)
 			printf("%s", separator);
 	}
+
 	printf("\n");
 	va_end(ap);
-
 }
