@@ -24,9 +24,10 @@ list_t *add_node(list_t **head, const char *str)
 		free(newNode);
 		return (NULL);
 	}
-	while (*Str)
+	while (*str)
 	{
 		length++;
+		str++;
 	}
 	newNode->str = str_copy;
 	newNode->len = length;
